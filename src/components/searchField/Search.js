@@ -4,11 +4,11 @@ import ShowResult from "../showResult/ShowResult";
 
 const Search = props => {
   const YOUR_CLIENT_ID = "PGBAyVqBYXvDBjeaz3kSsHAMnr1fndq1";
-  const urlString = `https://api.soundcloud.com/tracks/13158665?client_id=${YOUR_CLIENT_ID}`;
-
   const [data, setData] = useState([]);
   const [user, setUser] = useState("");
+  const [userSearch, setUserSearch] = useState("");
   const [showData, setShowData] = useState(false);
+  const urlString = `https://api.soundcloud.com/tracks/13158665?client_id=${YOUR_CLIENT_ID}&title=${userSearch}`;
 
   async function fetchUrl() {
     const response = await fetch(urlString);
@@ -21,25 +21,35 @@ const Search = props => {
     fetchUrl();
   }, []);
 
-  // console.log(data, user);
+  console.log(data);
 
   const handleClick = () => {
+    // if (data.title.indexOf(userSearch)) {
     setShowData(!showData);
+    // }
   };
 
   return (
     <div className="searchMain">
       <div className="inputHolder">
-        <input className="searchInput" type="text" />
+        <input
+          className="searchInput"
+          placeholder="Search..."
+          type="text"
+          value={userSearch}
+          onChange={e => setUserSearch(e.target.value)}
+        />
         <button className="searchButton" onClick={handleClick}>
           Go!
         </button>
       </div>
-      {showData ? (
-        <ShowResult data={data} user={user} />
-      ) : (
-        <div>Looking for a song?</div>
-      )}
+      <div className="displayData">
+        {showData ? (
+          <ShowResult data={data} user={user} />
+        ) : (
+          <div>Looking for a song?</div>
+        )}
+      </div>
     </div>
   );
 };

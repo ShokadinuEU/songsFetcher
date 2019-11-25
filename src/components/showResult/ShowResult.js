@@ -4,7 +4,7 @@ import "../searchField/search.css";
 const ShowResult = props => {
   const data = props.data;
   const user = props.user.username;
-  console.log(data, user);
+  // console.log(data, user);
 
   return (
     <div>
