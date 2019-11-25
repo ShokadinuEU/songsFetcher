@@ -21,12 +21,14 @@ const Search = props => {
     fetchUrl();
   }, []);
 
-  console.log(data);
+  // console.log(data);
 
   const handleClick = () => {
-    // if (data.title.indexOf(userSearch)) {
-    setShowData(!showData);
-    // }
+    if (userSearch === "") {
+      setShowData(false);
+    } else {
+      setShowData(!showData);
+    }
   };
 
   return (
@@ -36,6 +38,7 @@ const Search = props => {
           className="searchInput"
           placeholder="Search..."
           type="text"
+          autoFocus
           value={userSearch}
           onChange={e => setUserSearch(e.target.value)}
         />
