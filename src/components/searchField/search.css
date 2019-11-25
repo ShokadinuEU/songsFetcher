@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  text-align: center;
+  padding-top: 2em;
+  background-color: #ccc;
+}
+
+.searchMain {
+  padding: 2em;
+}
+
+.inputHolder {
+  justify-content: center;
+  text-align: center;
+}
+
+.searchInput {
+  padding: 0.5em 1.2em;
+  width: 225px;
+  margin-right: 1em;
+}
+
+.searchButton {
+  padding: 0.5em;
+  font-size: 1.2em;
+  margin: 0 auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
