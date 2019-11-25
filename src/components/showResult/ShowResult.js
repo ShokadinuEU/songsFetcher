@@ -1,5 +1,5 @@
 import React from "react";
-import "../searchField/search.css";
+import "./result.css";
 
 const ShowResult = props => {
   const data = props.data;
