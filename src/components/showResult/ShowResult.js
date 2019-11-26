@@ -3,17 +3,19 @@ import "./result.css";
 
 const ShowResult = props => {
   const data = props.data;
-  const user = props.user.username;
+  const artist = props.artist;
   console.log(props);
 
   return (
     <div>
-      <div className="showResult">
-        <h2>Artwork value: {data.artwork_url}</h2>
-        <h4>Artist Name: {user}</h4>
-        <h5>Song Name: {data.title} </h5>
-        <a href={data.permalink_url}>More Info</a>
-      </div>
+      {data.map((e, i) => (
+        <div className="showResult" key={i}>
+          <img src={e.artwork_url} alt={e.attachments_uri} />
+          <h4>Artist Name: </h4>
+          <h5>Song Name: {e.title} </h5>
+          <a href={e.permalink_url}>More Info</a>
+        </div>
+      ))}
     </div>
   );
 };

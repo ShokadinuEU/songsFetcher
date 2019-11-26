@@ -13,6 +13,7 @@
   width: 225px;
   margin-right: 1em;
   border-radius: 3px;
+  outline: 0;
 }
 
 .searchButton {
@@ -21,9 +22,18 @@
   margin: 0 auto;
   border-radius: 5px;
   cursor: pointer;
+  outline: 0;
 }
 
-.showResult > h2 {
+.showResult {
+  padding: 1em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  margin-bottom: 1.5em;
+}
+
+.showResult > img {
   text-align: left;
   margin: 1em 0;
   margin-bottom: 0;

@@ -5,21 +5,23 @@ import ShowResult from "../showResult/ShowResult";
 const Search = props => {
   const YOUR_CLIENT_ID = "PGBAyVqBYXvDBjeaz3kSsHAMnr1fndq1";
   const [data, setData] = useState([]);
-  const [user, setUser] = useState("");
+  const [artist, setArtist] = useState("");
   const [userSearch, setUserSearch] = useState("");
   const [showData, setShowData] = useState(false);
-  const urlString = `https://api.soundcloud.com/tracks/13158665?client_id=${YOUR_CLIENT_ID}&title=${userSearch}`;
+  const urlString = `https://api.soundcloud.com/tracks?q=${userSearch}&client_id=${YOUR_CLIENT_ID}`;
 
   async function fetchUrl() {
     const response = await fetch(urlString);
     const json = await response.json();
     setData(json);
-    setUser(json.user);
+    setArtist(json);
   }
 
   useEffect(() => {
     fetchUrl();
   }, []);
+
+  console.log(artist);
 
   const handleClick = () => {
     if (userSearch === "") {
@@ -28,7 +30,11 @@ const Search = props => {
       setShowData(!showData);
     }
   };
-  // console.log(data);
+
+  const handleOnChange = e => {
+    e.preventDefault();
+    setUserSearch(e.target.value);
+  };
 
   return (
     <div className="searchMain">
@@ -39,7 +45,7 @@ const Search = props => {
           type="text"
           autoFocus
           value={userSearch}
-          onChange={e => setUserSearch(e.target.value)}
+          onChange={handleOnChange}
         />
         <button className="searchButton" onClick={handleClick}>
           Go!
@@ -47,7 +53,7 @@ const Search = props => {
       </div>
       <div className="displayData">
         {showData ? (
-          <ShowResult data={data} user={user} />
+          <ShowResult data={data} artist={artist} />
         ) : (
           <div>Looking for a song?</div>
         )}
