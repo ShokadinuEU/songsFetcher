@@ -4,15 +4,15 @@ import "./result.css";
 const ShowResult = props => {
   const data = props.data;
   const user = props.user.username;
-  // console.log(data, user);
+  console.log(props);
 
   return (
     <div>
       <div className="showResult">
-        <h2>Art work is apparently "null" from api</h2>
+        <h2>Artwork value: {data.artwork_url}</h2>
         <h4>Artist Name: {user}</h4>
         <h5>Song Name: {data.title} </h5>
-        <a href={data.permalink_url}>Click here to for more Info</a>
+        <a href={data.permalink_url}>More Info</a>
       </div>
     </div>
   );

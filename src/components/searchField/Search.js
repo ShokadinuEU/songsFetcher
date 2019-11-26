@@ -21,8 +21,6 @@ const Search = props => {
     fetchUrl();
   }, []);
 
-  // console.log(data);
-
   const handleClick = () => {
     if (userSearch === "") {
       setShowData(false);
@@ -30,6 +28,7 @@ const Search = props => {
       setShowData(!showData);
     }
   };
+  // console.log(data);
 
   return (
     <div className="searchMain">

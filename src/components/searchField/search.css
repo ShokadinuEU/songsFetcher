@@ -7,5 +7,21 @@
 body {
   text-align: center;
   padding-top: 2em;
-  background-color: #ccc;
+  background-color: rgb(184, 184, 184);
+}
+
+.searchMain {
+  padding: 2em;
+  width: 720px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.displayData {
+  padding: 1em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  margin-top: 1em;
 }
