@@ -10,9 +10,11 @@ const ShowResult = props => {
     <div>
       {data.map((e, i) => (
         <div className="showResult" key={i}>
-          <img src={e.artwork_url} alt={e.attachments_uri} />
-          <h4>Artist Name: </h4>
-          <h5>Song Name: {e.title} </h5>
+          <img src={e.artwork_url} alt={e.policy} />
+          <div className="basic-info">
+            <h4>Artist Name: {e.genre}</h4>
+            <h5>Song Name: {e.title} </h5>
+          </div>
           <a href={e.permalink_url}>More Info</a>
         </div>
       ))}
