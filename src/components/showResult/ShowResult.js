@@ -15,7 +15,7 @@ const ShowResult = props => {
             <h4>Artist name: {artist[i].username}</h4>
             <h5>Song Name: {e.title} </h5>
           </div>
-          <a href={e.permalink_url}>More Info</a>
+          <a href={e.permalink_url}>Listen song</a>
         </div>
       ))}
     </div>
