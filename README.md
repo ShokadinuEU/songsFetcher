@@ -20,4 +20,4 @@
 
 #### Here's a sample of the app:
 
-![sample](https://user-images.githubusercontent.com/35012587/69595075-5c1d0a80-0ff6-11ea-8ad1-54b014882c9a.jpg)
+![sample](https://user-images.githubusercontent.com/35012587/69600967-7660e380-100a-11ea-9af3-f97b791c8ed1.jpg)
