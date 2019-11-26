@@ -17,3 +17,7 @@
 * Then as was mentioned on the instruction, you can fetch the data from API by clicking on the button | Go! |
 
 ##### + Sorry for my Poor Design, I was concentrate on functionality.
+
+#### Here's a sample of the app:
+
+![sample](https://user-images.githubusercontent.com/35012587/69595075-5c1d0a80-0ff6-11ea-8ad1-54b014882c9a.jpg)
