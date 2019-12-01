@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/song_fetcher-cloud_sound/static/css/main.0746de4a.chunk.css",
+    "main.js": "/song_fetcher-cloud_sound/static/js/main.bbe1dd6d.chunk.js",
+    "main.js.map": "/song_fetcher-cloud_sound/static/js/main.bbe1dd6d.chunk.js.map",
+    "runtime-main.js": "/song_fetcher-cloud_sound/static/js/runtime-main.52f2953d.js",
+    "runtime-main.js.map": "/song_fetcher-cloud_sound/static/js/runtime-main.52f2953d.js.map",
+    "static/js/2.c78c62f8.chunk.js": "/song_fetcher-cloud_sound/static/js/2.c78c62f8.chunk.js",
+    "static/js/2.c78c62f8.chunk.js.map": "/song_fetcher-cloud_sound/static/js/2.c78c62f8.chunk.js.map",
+    "index.html": "/song_fetcher-cloud_sound/index.html",
+    "precache-manifest.8f7e5181a3651f6e266f8d37e444f393.js": "/song_fetcher-cloud_sound/precache-manifest.8f7e5181a3651f6e266f8d37e444f393.js",
+    "service-worker.js": "/song_fetcher-cloud_sound/service-worker.js",
+    "static/css/main.0746de4a.chunk.css.map": "/song_fetcher-cloud_sound/static/css/main.0746de4a.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52f2953d.js",
+    "static/js/2.c78c62f8.chunk.js",
+    "static/css/main.0746de4a.chunk.css",
+    "static/js/main.bbe1dd6d.chunk.js"
+  ]
+}
